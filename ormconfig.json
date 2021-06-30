@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": "5432",
+  "username": "postgres",
+  "password": "postgres",
+  "database": "project1_database",
+  "synchronize": false,
+  "logging": true,
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "subscribers": ["dist/**/*.subscriber{.ts,.js}"],
+  "seeds": ["src/database/seeds/*.ts"],
+  "migrations": ["./dist/database/migrations/*.js"],
+  "cli": {
+    "entitiesDir": "src",
+    "migrationsDir": "src/database/migrations"
+  }
+}
